@@ -1,11 +1,10 @@
 import axios from 'axios';
-const sendMessage =  document.querySelector('.sendMessage');
+const sendMessage = document.querySelector('.sendMessage');
 const showError = (errorSpan, text) => {
-
   errorSpan.textContent = text;
   errorSpan.classList.remove(errorSpan.classList[1]);
   errorSpan.classList.add('show-error');
-  console.log('Laude');
+
   sendMessage.classList.remove(sendMessage.classList[3]);
 };
 const hideError = (errorSpan) => {
@@ -18,8 +17,6 @@ const hideError = (errorSpan) => {
 const validateForm = (data, letters, idName, attr) => {
   const errorSpan = document.querySelector(`.error${attr}`);
   if (data) {
-    console.log(data.length);
-
     if (!data.match(letters)) {
       let text =
         idName === 'email'
@@ -45,7 +42,7 @@ const validateForm = (data, letters, idName, attr) => {
   }
 };
 
-export const validate = (e)=> {
+export const validate = (e) => {
   let text;
   const name = document.getElementById('name').value.trim();
   const email = document.getElementById('email').value.trim();

@@ -1,4 +1,3 @@
-const AppError = require('../utils/appError');
 
 const sendDevError = (err, req, res) => {
   res.status(404).json({
@@ -17,7 +16,7 @@ const sendErrorProd = (err, req, res) => {
       });
     }
 
-    console.log('Laude');
+
     return res.status(500).json({
       status: 'Error',
       message: 'Something went very wrong',

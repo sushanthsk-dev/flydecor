@@ -9,8 +9,6 @@ toggleBars.addEventListener('click', function () {
   document
     .getElementById('navbar-toggler')
     .setAttribute('aria-expanded', false);
-  console.log(toggleBars.classList); //toggleBars.classList
-  // alert('LOOLL')
 });
 // var bool = false;
 // const showError = (errorSpan, text) => {

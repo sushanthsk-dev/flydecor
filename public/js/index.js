@@ -8,11 +8,9 @@ import { validate } from './validateForm';
 const loginForm = document.querySelector('.form-data');
 const logoutBtn = document.querySelector('.nav-logout');
 const contactForm = document.querySelector('.sendMessage');
-console.log('HEllo1');
-console.log(loginForm);
+
 if (loginForm)
   loginForm.addEventListener('submit', (e) => {
-    console.log('Hello');
     e.preventDefault();
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
@@ -36,7 +34,7 @@ if (contactForm) {
 
     // }
     const sendMessage = document.querySelector('.sendMessage');
-    console.log(sendMessage.classList);
+
     if (sendMessage.classList[3] == 'send-response') {
       // e.target.textContent = 'Sending...';
       contactResponse(name, email, subject, message);
