@@ -1,0 +1,82 @@
+extends base  
+block content  
+    section#home.home
+        .wow.animated.flipInY.event-plan-temp(data-wow-delay='0.2s')
+            img(src='img/eventPlanner.png' alt='')
+    section#about.about
+        .heading
+            h3 About Us
+        .about-contain
+            .about-text
+                p
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                       Ipsa totam repellat, placeat, laborum atque blanditiis unde
+                       explicabo quas, quisquam soluta alias. Odio debitis eius vel
+                       sint deserunt Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                       Ipsa totam repellat, placeat, laborum atque blanditiis unde
+                       explicabo quas, quisquam soluta alias. Odio debitis eius vel
+                       sint deserunt Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                       Ipsa totam repellat, placeat, laborum atque blanditiis unde
+                       explicabo quas, quisquam soluta alias. Odio debitis eius vel
+                       sint deserunt velit accusamus asperiores?Lorem ipsum dolor sit amet,
+                       consectetur adipisicing elit. Nisi similique cumque voluptatibus tempore
+                       eligendi minus quam quia sit, amet nobis quod!Incidunt beatae eius est
+                       itaque voluptatibus laudantium necessitatibus exercitationem!
+            .about-img
+                img(src='img/logo.png' alt='flydecor-logo' width='200px' height='200px')
+    section#service.services
+        .heading
+            h3 Services
+        .card-container
+            .cards
+                div
+                    img(src='img/birthday.png' alt='birthday-icon' width='60' height='60')
+                h3 Birthday
+                p
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, odio nihil, unde aut maxime officia
+                       recusandae consectetur
+            .cards
+                div
+                    img(src='img/birthday.png' alt='birthday-icon' width='60' height='60')
+                h3 Birthday
+                p
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, odio nihil, unde aut maxime officia
+                       recusandae consectetur
+            .cards
+                div
+                    img(src='img/birthday.png' alt='birthday-icon' width='60' height='60')
+                h3 Birthday
+                p
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, odio nihil, unde aut maxime officia
+                    recusandae consectetur
+    section#contact.contact
+        .heading
+            h3 Contact Us
+        .contact-container
+            .contact-details
+                .address-div
+                    i.ion-ios-location-outline
+                    h4 Address
+                    p
+                           Moodbidri Karnataka
+                .phone-div
+                    i.ion-ios-telephone-outline
+                    h4 Phone number
+                    p
+                        a(href="tel:+919663179875") +919663179875
+                .email-div
+                    i.ion-ios-email-outline
+                    h4 gmail
+                    p
+                        a(href="mailto:flydecor65@gmail.com") flydecor65@gmail.com
+            form.contact-form
+                input#name(type='text' name='name' placeholder='Enter your name' required=''  autocomplete="off")
+                span#errorName.error1.hide-error
+                input#email(type='email' name='email' placeholder='Enter your email' required='' autocomplete="off")
+                span#errorName.error2.hide-error
+                input#subject(type='text' name='subject' placeholder='Subject' required='' autocomplete="off" )
+                span#errorName.error3.hide-error
+                textarea#message(name='message' cols='30' rows='6' placeholder='message' required='' autocomplete="off")
+                span#errorName.error4.hide-error
+                button.btn.btn-primary.sendMessage Send Message
+

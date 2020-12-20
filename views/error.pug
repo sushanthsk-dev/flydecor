@@ -1,0 +1,97 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Fly Decor | #{title}
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet' type='text/css' href='/css/main.css')
+        link(rel='stylesheet' href='/css/style.css')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css')
+        link(rel='icon' href='/img/logowhite.png' type='image/gif' sizes='64x64')
+        link(rel='stylesheet' href='/css/reset.css')
+        // CSS reset
+        link(rel='stylesheet' href='/css/style.css')
+        // Resource style
+        link(rel='stylesheet' href='/lib/ionicons/css/ionicons.min.css')
+        link(href='/lib/animate/animate.min.css' rel='stylesheet')
+        // Latest compiled and minified CSS
+        link(rel='stylesheet' href='/bootstrap/bootstrap.min.css')
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        script(src='https://apis.google.com/js/platform.js')
+        // jQuery library
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+        script(src='https://kit.fontawesome.com/1dfc601162.js')
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+        script(src='https://code.iconify.design/1/1.0.7/iconify.min.js')
+        script(src='https://code.jquery.com/jquery-3.3.1.js')
+        script(src='/lib/wow/wow.min.js')
+    body
+        nav.navbar.navbar-expand-md.navbar-dark.fixed-top(style='background-color:  black; padding: 0px 8px;')
+                .container
+                    a.navbar-brand(href='/')
+                        img(src='img/logowhite.png' width='60px' height='60px')
+                    i#navbar-toggler.fas.fa-bars.navbar-toggler(data-toggle='collapse' data-target='#collapsibleNavbar' style='\
+                    cursor: pointer;\
+                    color: white; border: 0px solid transparent; font-size: 2em\
+                    ')
+                    style.
+                        .nav-item .nav-link {
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        }
+                    // Navbar links
+                    #collapsibleNavbar.collapse.navbar-collapse
+                        ul.navbar-nav.ml-auto(style='text-align: center;')
+                            li.nav-item
+                                a.nav-link(href='../#home') Home
+                            li.nav-item
+                                a.nav-link(href='../#about') About
+                            li.nav-item
+                                a.nav-link(href='../#service') Services
+                            li.nav-item
+                                a.nav-link(href='../#contact') Contact us
+        style.
+            .section-error {
+                width: 100%;
+                height: 100vh;
+                text-align: center;
+                align-items: center;
+            }
+            .error-div {
+            font-family: sans-serif, 'Courier New', Courier, monospace;
+            position: relative;
+            text-align: center;
+            top: 30%;
+            }
+            .error-div h1 {
+            font-size: 2em;
+            }
+            .error-div h3 {
+            font-size: 1.5em;
+            color: rgba(0, 0, 0, 0.7);
+            }
+        section.section-error
+            .error-div
+                h1 Something went wrong!
+                h3= msg
+        footer#footer
+            ul.icons
+                li
+                    a.icon.fa-facebook(href='#' target='_blank')
+                        span.label Facebook
+                li
+                    a.icon.fa-instagram(href='https://www.instagram.com/flydecor_' target='_blank')
+                        span.label Instagram
+                li
+                    a.icon.fa-envelope(href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=flydecor65@gmail.com' target='_blank')
+                        span.label Email
+            p.copyright
+                | &copy; 2020 | 
+                b Foxy Snickers
+                | . All Rights Reserved. 
+                br
+                | Designed by 
+                a(style='text-decoration: none !important;' href='https://www.instagram.com/sushanthsk_/' target='_blank') Sushanth Sk
+        script(src='js/main.js')
+        script(src='js/bundle.js')   

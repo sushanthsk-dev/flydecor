@@ -1,0 +1,24 @@
+nav.navbar.navbar-expand-md.navbar-dark.fixed-top(style='background-color:  black; padding: 0px 8px;')
+            .container
+                a.navbar-brand(href='/')
+                    img(src='img/logowhite.png' width='60px' height='60px')
+                i#navbar-toggler.fas.fa-bars.navbar-toggler(data-toggle='collapse' data-target='#collapsibleNavbar' style='\
+                cursor: pointer;\
+                color: white; border: 0px solid transparent; font-size: 2em\
+                ')
+                style.
+                    .nav-item .nav-link {
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    }
+                // Navbar links
+                #collapsibleNavbar.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto(style='text-align: center;')
+                        li.nav-item
+                            a.nav-link(href='#home') Home
+                        li.nav-item
+                            a.nav-link(href='#about') About
+                        li.nav-item
+                            a.nav-link(href='#service') Services
+                        li.nav-item
+                            a.nav-link(href='#contact') Contact us
