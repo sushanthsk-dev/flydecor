@@ -6,7 +6,7 @@ import { contactResponse } from './contact';
 import { validate } from './validateForm';
 // import axios from 'axios';
 const loginForm = document.querySelector('.form-data');
-const logoutBtn = document.querySelector('.nav-logout');
+const logoutBtn = document.querySelector('.logout-btn');
 const contactForm = document.querySelector('.sendMessage');
 
 if (loginForm)
