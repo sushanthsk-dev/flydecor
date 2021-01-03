@@ -24,7 +24,7 @@ const validateForm = (data, letters, idName, attr) => {
           : 'Please enter a correct input';
       showError(errorSpan, text);
     } else if (data.length < 5) {
-      text = 'Please enter atleast 5 character';
+      let text = 'Please enter atleast 5 character';
       showError(errorSpan, text);
     } else {
       hideError(errorSpan);

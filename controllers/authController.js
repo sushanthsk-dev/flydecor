@@ -15,7 +15,6 @@ const createSendToken = (user, statusCode, req, res) => {
   const cookieOptions = {
     expires: new Date(Date.now() + process.env.JWT_EXPIRE_IN * 24 * 60 * 60),
     httpOnly: true,
-    secure: true,
   };
   // if (process.env.NODE_ENV == 'production') cookieOptions.secure = true;
   res.cookie('jwt', token, cookieOptions);
@@ -58,6 +57,7 @@ exports.protect = CatchAsync(async (req, res, next) => {
   } else if (req.cookies.jwt) {
     token = req.cookies.jwt;
   }
+  console.log(token);
   if (!token) {
     return next(
       new AppError('You are not logged in! Please log in to get access', 401)
