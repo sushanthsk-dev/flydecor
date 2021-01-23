@@ -33,7 +33,7 @@ app.use(
           'https://www.gstatic.com',
           'https://cdnjs.cloudflare.com',
         ],
-        connectSrc: ["'self'", `ws://localhost:*`, `ws://127.0.0.1:*`],
+        connectSrc: ["'self'", `*`, `*`],
         styleSrc: [
           "'self'",
           'fonts.googleapis.com',
