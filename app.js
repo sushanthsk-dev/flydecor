@@ -21,7 +21,38 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(cors());
 app.options('*', cors());
-app.use(helmet());
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: [
+          "'self' 'unsafe-inline'",
+          'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js',
+          'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js',
+          'https://www.gstatic.com',
+          'https://cdnjs.cloudflare.com',
+        ],
+        connectSrc: ["'self'", `ws://localhost:*`, `ws://127.0.0.1:*`],
+        styleSrc: [
+          "'self'",
+          'fonts.googleapis.com',
+          'cdnjs.cloudflare.com',
+          "'unsafe-inline'",
+        ],
+        fontSrc: ["'self'", 'fonts.gstatic.com', 'cdnjs.cloudflare.com'],
+        imgSrc: [
+          "'self'",
+          'https://maps.gstatic.com',
+          'https://maps.googleapis.com',
+          'data:',
+          'https://another-domain.com',
+        ],
+        frameSrc: ["'self'", 'https://www.google.com'],
+      },
+    },
+  })
+);
 
 if (process.env.NODE_ENV === 'development') {
   console.log('Developmnet');
