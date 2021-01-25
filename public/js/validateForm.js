@@ -5,13 +5,13 @@ const showError = (errorSpan, text) => {
   errorSpan.classList.remove(errorSpan.classList[1]);
   errorSpan.classList.add('show-error');
 
-  // sendMessage.classList.remove(sendMessage.classList[3]);
+  sendMessage.classList.remove(sendMessage.classList[3]);
 };
 const hideError = (errorSpan) => {
   // const sendMessage =  document.querySelector('.sendMessage');
   errorSpan.classList.remove(errorSpan.classList[1]);
   errorSpan.classList.add('hide-error');
-  // sendMessage.classList.add('send-response');
+  sendMessage.classList.add('send-response');
 };
 
 const validateForm = (data, letters, idName, attr) => {
