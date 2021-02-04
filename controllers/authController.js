@@ -89,3 +89,4 @@ exports.logout = (req, res) => {
     status: 'success',
   });
 };
+

@@ -1,5 +1,5 @@
 import axios from 'axios';
-const sendMessage = document.querySelector('.send-message');
+const sendMessage = document.querySelector('.sendMessage');
 const showError = (errorSpan, text) => {
   errorSpan.textContent = text;
   errorSpan.classList.remove(errorSpan.classList[1]);
@@ -8,7 +8,6 @@ const showError = (errorSpan, text) => {
   sendMessage.classList.remove(sendMessage.classList[3]);
 };
 const hideError = (errorSpan) => {
-  const sendMessage =  document.querySelector('.sendMessage');
   errorSpan.classList.remove(errorSpan.classList[1]);
   errorSpan.classList.add('hide-error');
   sendMessage.classList.add('send-response');
