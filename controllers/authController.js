@@ -5,7 +5,7 @@ const User = require('../models/userModel');
 const AppError = require('../utils/appError');
 
 const signToken = (id) => {
-  return jwt.sign({ id: id }, process.env.JWT_SECRET_CODE, {
+  return jwt.sign({ id: id }, process.env.JWT_SECRET, {
     expiresIn: process.env.JWT_EXPIRE_IN,
   });
 };
